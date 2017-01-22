@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/angular.min.js"></script>
+  <script src="js/app.js"></script>
+  <style>
+    body {
+      font-size: 1.3em;
+    }
+  </style>
+  <title>Lunch Check</title>
+</head>
+
+<body ng-app="LunchCheck">
+
+  <div ng-controller="LunchCheckController">
+
+    <div class="container">
+
+      <h1>Lunch Check</h1>
+
+      <span>Describe your lunch here:</span><br>
+
+      <!-- WARNING: COMMAS WITH NO TEXT WILL NOT BE CONSIDERED VALID ITEMS -->
+      <input class="inputx" ng-model="lunchInput" ng-style="borderStyle"><br>
+
+      <button class="btn btn-primary" ng-click="checkLunch()" ng-blur="clearAlerts()">Check If Too Much</button>
+
+      <div id="result-messages">
+
+        <div class="alert alert-success" ng-show="showSuccess">
+          <strong>{{successMessage}}</strong>
+        </div>
+
+        <div class="alert alert-danger" ng-show="showError">
+          <strong>{{errorMessage}}</strong> 
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</body>
+
+</html>
