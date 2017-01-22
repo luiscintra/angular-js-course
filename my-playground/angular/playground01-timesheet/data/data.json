@@ -1,0 +1,28 @@
+{
+    "timesheet_entries" : [
+        {
+            "name" : "Luis",
+            "entry" : "2017/01/10 08:00",
+            "exit" : "2017/01/10 19:00",
+            "comment" : "I have a life to live."
+        },
+        {
+            "name" : "Luis",
+            "entry" : "2017/01/11 08:00",
+            "exit" : "2017/01/11 19:00",
+            "comment" : "You only live once."
+        },
+        {
+            "name" : "Luis",
+            "entry" : "2017/01/12 08:00",
+            "exit" : "2017/01/12 19:00",
+            "comment" : "Life's hard. Have a beer."
+        },
+        {
+            "name" : "Luis",
+            "entry" : "2017/01/13 08:00",
+            "exit" : "2017/01/13 19:00",
+            "comment" : "Fuck off, boss."
+        }                    
+        ]
+}
