@@ -40,7 +40,7 @@
         <h2>To Buy:</h2>
         <ul>
           <li ng-repeat="item in buy.toBuyItems">Buy {{item.quantity}} {{item.name}} 
-            <button ng-click="buy.buy($index)" class="btn btn-default"><span class="glyphicon glyphicon-ok"></span> Buy</button>
+            <button ng-click="buy.buy($index)" class="btn btn-default"><span class="glyphicon glyphicon-ok"></span> Bought</button>
           </li>
         </ul>
         <div ng-if="!buy.toBuyItems.length" class="emptyMessage">Everything is bought!</div>
