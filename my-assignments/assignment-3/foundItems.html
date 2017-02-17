@@ -3,7 +3,10 @@
   <li ng-repeat="item in items">
     {{ item.name }}
     <button ng-click="onRemove({index: $index});">Don't want this one!</button>
+    <div>Description: {{item.description}}</div>
+    <br>
   </li>
+  
 </ul>
 
 <div class="error" ng-if="!items.length">Nothing found.</div>
